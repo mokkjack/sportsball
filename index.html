@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportsball</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #game {
+            max-width: 600px;
+            margin: auto;
+        }
+        input {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>Sportsball</h1>
+        <div id="score">Score: <span id="points">0</span></div>
+        <div id="enteredAthletes" style="border: 1px solid #ccc; height: 150px; overflow-y: scroll; margin-bottom: 10px; padding: 5px;"></div>
+        <input type="text" id="athleteInput" placeholder="Enter athlete name...">
+        <div id="feedback"></div>
+        <button id="startButton">Start Game</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
